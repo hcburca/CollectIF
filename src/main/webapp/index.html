@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2017 Horia
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Collect'IF</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href='css/font-awesome.min.css' rel='stylesheet'/>
+        <link href="css/general.css" rel="stylesheet">
+        <link href="css/welcome.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header flex-row">
+                    <a href="#" class="pull-left"><img title="Collect'IF" alt="Collect'IF logo" src="img/logo-v1.png"/></a>
+                    <a class="navbar-brand" href="#">Collect'IF</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#signup-modal" data-toggle="modal"><i class="fa fa-user-plus"></i> S'enregistrer</a></li>
+                    <li><a href="#login-modal" data-toggle="modal"><i class="fa fa-sign-in"></i> S'identifier</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row row-flex">
+                <div class="col-md-8">
+                    <h2>Découvrez-nous</h2>
+                    <p>Nous sommes bien.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut est scelerisque, mollis eros eget, 
+                        cursus orci. Praesent eu ligula tortor. Cras eu leo a lectus tempus mollis sed in lorem. 
+                        Pellentesque congue ligula id diam dapibus, non mollis eros imperdiet. Morbi finibus libero ac 
+                        dictum malesuada. Ut mi velit, volutpat sed enim vel, commodo fringilla ex. Phasellus in sagittis 
+                        tellus. Maecenas sit amet ex a urna feugiat placerat in eget sapien. Phasellus a lacus ipsum. 
+                        Aliquam ac tempus tortor. Duis sed ultricies nulla, eu ultricies quam. Nunc id risus diam. 
+                        Nullam vitae molestie dui. Curabitur commodo fringilla nulla, a malesuada erat.</p>
+                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer rhoncus orci quis mollis 
+                        dictum. Integer quis mauris quis ex tristique maximus. Aliquam erat volutpat. Donec massa lectus, 
+                        fermentum vitae odio non, gravida auctor leo. Pellentesque ipsum neque, tempor eu finibus a, 
+                        interdum aliquam felis. Sed in mattis tellus, vitae euismod felis.<p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive img-rounded" title="Découvrez-nous" alt="Découvrez-nous" src="img/decouvrez-nous.png"/>
+                </div>
+            </div>
+            <div class="row bg-turqoise row-flex row-margin">
+                <div class="col-md-4">
+                    <img class="img-responsive img-rounded" title="Comment ça marche" alt="Comment ça marche" src="img/comment-ca-marche.jpg"/>
+                </div>
+                <div class="col-md-8">
+                    <h2>Comment ça marche</h2>
+                    <p>Faut faire une demande.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut est scelerisque, mollis eros eget, 
+                        cursus orci. Praesent eu ligula tortor. Cras eu leo a lectus tempus mollis sed in lorem. 
+                        Pellentesque congue ligula id diam dapibus, non mollis eros imperdiet. Morbi finibus libero ac 
+                        dictum malesuada. Ut mi velit, volutpat sed enim vel, commodo fringilla ex. Phasellus in sagittis 
+                        tellus. Maecenas sit amet ex a urna feugiat placerat in eget sapien. Phasellus a lacus ipsum. 
+                        Aliquam ac tempus tortor. Duis sed ultricies nulla, eu ultricies quam. Nunc id risus diam. 
+                        Nullam vitae molestie dui. Curabitur commodo fringilla nulla, a malesuada erat.</p>
+                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer rhoncus orci quis mollis 
+                        dictum. Integer quis mauris quis ex tristique maximus. Aliquam erat volutpat. Donec massa lectus, 
+                        fermentum vitae odio non, gravida auctor leo. Pellentesque ipsum neque, tempor eu finibus a, 
+                        interdum aliquam felis. Sed in mattis tellus, vitae euismod felis.<p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer myfooter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2017, Collect'IF, All rights reserved</p>
+                    </div>
+                </div> 
+            </div>
+        </footer>
+
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close btn-login" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Identifiez vous</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id='login-failed'></div>
+                        <form class="form-horizontal" id="loginForm">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="login-email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="login-email" placeholder="Saisissez votre email" required>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default btn-login">Se connecter</button>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="col-sm-offset-10" id="register-link" href="#signup-modal" data-toggle="modal" data-dismiss="modal">S'enregister</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-login" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sign-up Modal -->
+        <div id="signup-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close btn-signup" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Enregistrez vous</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id='signup-status'></div>
+                        <form class="form-horizontal" id="signupForm">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="signup-fname">Nom:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="signup-fname" placeholder="Saisissez votre nom" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="signup-gname">Prenom:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="signup-gname" placeholder="Saisissez votre prenom" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="signup-email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="signup-email" placeholder="Saisissez votre email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="signup-address">Adresse:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="signup-address" placeholder="Saisissez votre adresse" required>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default btn-signup">S'enregistrer</button>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="col-sm-offset-10" id="login-link" href="#login-modal" data-toggle="modal" data-dismiss="modal">S'identifier</a> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-signup" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/login-register.js"></script>
+    </body>
+</html>

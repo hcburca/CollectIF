@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 9, 2017, 8:24:52 PM
+    Author     : Horia
+*/
+a.disabled {
+    pointer-events: none;
+}
+
+.navbar-header a {
+    align-self: center;
+}
+
+.alert-info {
+    color: #2c6060;
+    background-color: #b7d2d5;
+    border-color: #8a9ea0;
+}
+
+.btn-primary {
+    background-color: #066770;
+    border-color: #075057;
+}
+
+.btn-primary[disabled] {
+    background-color: #35878e;
+}
+
+.btn-primary[disabled]:hover {
+    background-color: #2b6c72;
+}
+
+.btn-inactive {
+    background-color: #ccd0d0 !important;
+    cursor: no-drop;
+}
+
+.btn-inactive:hover {
+    background-color: #c4c7c7;
+}
+
+.btn-primary:hover {
+    background-color: #07585f;
+    border-color: #074147;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, 
+.btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover, .open>.dropdown-toggle.btn-primary, .btn-primary.active,
+.btn-primary:active, .btn-primary.focus, .btn-primary:focus {
+    background-color: #0C3D41;
+    border-color: #0c3a3d;
+}
+

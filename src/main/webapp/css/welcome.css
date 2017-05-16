@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2017, 8:42:28 AM
+    Author     : Horia
+*/
+body {
+    padding: 0 !important; 
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #0C3D41;
+    border-color: #08292b;
+}
+
+.bg-turqoise {
+    background-color: #b7d2d5;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.row-margin { 
+    margin-top:20px; 
+}
+
+.row-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* apply flex-direction to immediate children of the class row-flex */
+.row-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myfooter {
+    background-color: #0C3D41;
+    border-color: #08292b;
+    margin-top: 10px;
+    color: #9d9d9d;
+    text-align: center;
+}
+
+.myfooter p {
+    margin: 10px 0;
+}
+

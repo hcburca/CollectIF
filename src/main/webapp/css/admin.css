@@ -1,0 +1,155 @@
+/*
+Copyright (C) 2017 Horia
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+/* 
+    Created on : Apr 26, 2017, 12:07:13 PM
+    Author     : Horia
+*/
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#nav-buttons {
+    padding: 0;
+    margin: 0;
+}
+
+#control_prev {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#control_next {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#nr-events {
+    height: 34px;
+    background-color: #c3dcf2;
+    padding: 7px 5px;
+}
+
+#eventCarousel {
+    margin-bottom: 10px;
+}
+
+#eventCarousel-inner .active {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#eventCarousel-inner .item img {
+    height: 100px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#header, #main-content {
+    border-bottom: 1px solid;
+}
+
+#event__img {
+    flex: 0.5;
+    padding: 10px;
+}
+
+.two-paragraphs {
+    flex: 1;
+    padding: 10px;
+}
+
+#tp-left {
+    text-align: left;
+}
+
+#tp-right {
+    text-align: right;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#participants, #places {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#map {
+    width: 70%;
+    margin: 0 10px 10px 10px;
+    border: 1px solid;
+    height: 450px;
+}
+
+#participants__select, #lieu__select {
+    width: 100%;
+}
+
+.tout-afficher {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.tout-afficher p {
+    margin: auto;
+}
+
+#places__filtre select, #paf-input {
+    margin-left: 5px;
+}
+
+.page-row {
+    margin: 1vh 1vw;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.margin-bottom-none {
+    margin-bottom: 0;
+}
+
+.side-margins-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
