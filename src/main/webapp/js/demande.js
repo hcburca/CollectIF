@@ -85,6 +85,17 @@ $(function () {
                             option.appendChild(document.createTextNode(activites[i].denomination));
                             list.appendChild(option);
                         }
+                        
+                        //sort the list of activities
+                        var options = $("#activity-choice option:not(:first)");
+                        options.sort(function(a,b) {
+                           if (a.text > b.text) return 1;
+                           else if (a.text < b.text) return -1;
+                           else return 0;
+                        });
+                        $("#activity-choice option:not(:first)").remove();
+                        $("#activity-choice").append(options);
+                        
                         //select the right activity if there is a 'idActivite' parameter in the link
                         var idActivite = getUrlParameter("idActivite");
                         if (idActivite) {

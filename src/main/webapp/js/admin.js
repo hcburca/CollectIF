@@ -500,8 +500,7 @@ $(document).ready(function () {
         $('#eventCarousel .active .event__current-place').text("");
         //reset the switch for the places and the markers of the places on the map
         $("#lieu__select option:selected").prop("selected", false);
-        $('#lieu__myonoffswitch').trigger('switchChange.bootstrapSwitch', false);
-        //$('#lieu__myonoffswitch').bootstrapSwitch('state', false, false);
+        $('#lieu__myonoffswitch').bootstrapSwitch('state', false, false);
         //reseting the distances
         resetDistances();
         updatePage();
