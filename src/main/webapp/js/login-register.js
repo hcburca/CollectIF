@@ -109,18 +109,18 @@ function sendRegister() {
                 if (data.result == "success") {
                     document.getElementById('signupForm').reset();
                     $('#signup-status').html("<p>" + data.message + "</p>");
-                    $('#signup-status').addClass('alert alert-success');
+                    $('#signup-status').removeClass("alert-danger").addClass('alert alert-success');
                 } else if (data.result == "failure") {
                     $('#signup-status').html("<p>" + data.message + "</p>");
-                    $('#signup-status').addClass('alert alert-danger');
+                    $('#signup-status').removeClass("alert-success").addClass('alert alert-danger');
                 } else {
                     $('#signup-status').html("<p> Probleme inconnue, veuillez réessayer plus tard.</p>");
-                    $('#signup-status').addClass('alert alert-danger');
+                    $('#signup-status').removeClass("alert-success").addClass('alert alert-danger');
                 }
             })
             .fail(function () {
                 $('#signup-status').html("<p> Problem de serveur, veuillez réessayer plus tard.</p>");
-                $('#signup-status').addClass('alert alert-danger');
+                $('#signup-status').removeClass("alert-success").addClass('alert alert-danger');
             })
             .always(function () {
                 $('#signup-modal').removeClass('loading');

@@ -256,7 +256,8 @@ function sendRequestForParticipants(idActivite) {
                         var daysData = data.activite.participantsParDate;
                         var moments = $(".moment");
                         for (var i = 0; i < daysData.length; i++) {
-                            if (daysData[i].nr != 0) {
+                            if (daysData[i].nr > 0 && daysData[i].nr < data.activite.nbParticipants) {
+                                $(moments[i]).find("span").remove();
                                 $(moments[i]).append("<span> (" + daysData[i].nr + "/" + data.activite.nbParticipants + ")</span>");
                             }
                             //if the user is busy for a particular date and moment then show him that 
@@ -265,7 +266,7 @@ function sendRequestForParticipants(idActivite) {
                                 $(moments[i]).attr('data-original-title', daysData[i].statusMoment);
                             } else {
                                 //display the participants on hover if there are any
-                                if (daysData[i].nr > 0) {
+                                if (daysData[i].nr > 0 && daysData[i].nr < data.activite.nbParticipants) {
                                     var participantsTable = ["Participants:"];
                                     for (var j = 0; j < daysData[i].nr; j++) {
                                         participantsTable.push(daysData[i].participants[j].nom);
